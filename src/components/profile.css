@@ -1,0 +1,124 @@
+.container {
+  width: 1280px;
+  height: 853px;
+  max-width: 90vw;
+  max-height: 90vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6),
+              0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  position: relative;
+  animation: cardFloat 6s ease-in-out infinite;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.1), 
+    transparent);
+  animation: shine 3s infinite;
+  pointer-events: none;
+}
+
+.image-text {
+  font-size: 18rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  background: url('../public/profile.jpg');
+  background-size: 180%;
+  background-position: center 30%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin: 0;
+  line-height: 0.75;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+  animation: textGlow 4s ease-in-out infinite;
+}
+
+.image-text:hover {
+  animation: textGlow 4s ease-in-out infinite, textScale 0.3s ease forwards;
+}
+
+@keyframes cardFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: rotate(0deg) translate(-100%, -100%);
+  }
+  100% {
+    transform: rotate(0deg) translate(100%, 100%);
+  }
+}
+
+@keyframes textGlow {
+  0%, 100% {
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5)) 
+            drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 15px 40px rgba(0, 0, 0, 0.7)) 
+            drop-shadow(0 0 40px rgba(255, 255, 255, 0.5));
+  }
+}
+
+@keyframes textScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive sizing */
+@media (max-width: 1400px) {
+  .image-text {
+    font-size: 14rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .image-text {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-text {
+    font-size: 6rem;
+  }
+}
