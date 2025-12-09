@@ -15,7 +15,7 @@ export default function Resume() {
             <div className="resume-icon">📄</div>
             <h3>My Resume</h3>
             <p>Complete overview of my professional experience, skills, and education.</p>
-            <a href="/Resume.pdf" download="Resume.pdf" className="btn">
+            <a href="/my-portfolio/Resume.pdf" download="Resume.pdf" className="btn">
               Download Resume
             </a>
           </div>
