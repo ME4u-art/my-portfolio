@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="navbar" role="navigation" aria-label="Main navigation">
       <div className="nav-container">
         <div className="logo" aria-label="Hicham Gnouni">
-          <img src="/profile.jpg" alt="Hicham Gnouni" className="logo-image" />
+          <img src="/my-portfolio/profile.jpg" alt="Hicham Gnouni" className="logo-image" />
         </div>
         <button 
           className={`hamburger ${isOpen ? 'active' : ''}`} 
