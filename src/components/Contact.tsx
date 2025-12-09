@@ -7,7 +7,7 @@ import './contact.css';
 const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '';
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || '';
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '';
-const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL || '';
+// const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL || '';
 
 if (EMAILJS_PUBLIC_KEY) {
   emailjs.init(EMAILJS_PUBLIC_KEY);
