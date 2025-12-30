@@ -28,7 +28,6 @@ export default function Navbar() {
         <ul className={`nav-links ${isOpen ? 'active' : ''}`} role="menubar">
           <li role="none"><a href="#hero" onClick={closeMenu} role="menuitem">Home</a></li>
           <li role="none"><a href="#about" onClick={closeMenu} role="menuitem">About</a></li>
-          <li role="none"><a href="#projects" onClick={closeMenu} role="menuitem">Projects</a></li>
           <li role="none"><a href="#skills" onClick={closeMenu} role="menuitem">Skills</a></li>
           <li role="none"><a href="#resume" onClick={closeMenu} role="menuitem">Resume</a></li>
           <li role="none"><a href="#contact" onClick={closeMenu} role="menuitem">Contact</a></li>

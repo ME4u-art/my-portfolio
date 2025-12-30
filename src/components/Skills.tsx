@@ -9,20 +9,25 @@ export default function Skills() {
     {
       id: 1,
       category: "Frontend",
-      items: ["React", "TypeScript", "HTML5", "CSS3", "JavaScript", "Tailwind CSS"]
+      items: ["React", "HTML5", "CSS3", "JavaScript", "Tailwind CSS"]
     },
     {
       id: 2,
       category: "Backend",
-      items: ["Node.js", "Express", "Python", "REST APIs", "MongoDB", "PostgreSQL"]
+      items: ["javaScript", "Node.js", "Express", "Python", "REST APIs", "MongoDB", "PostgreSQL"]
     },
     {
       id: 3,
+      category: "Mobile Development",
+      items: ["Flutter", "Dart", "React Native", "iOS", "Android"]
+    },
+    {
+      id: 4,
       category: "Tools & DevOps",
       items: ["Git", "Docker", "GitHub", "Vite", "Linux", ]
     },
     {
-      id: 4,
+      id: 5,
       category: "Soft Skills",
       items: ["Problem Solving", "Communication", "Team Collaboration", "Project Management",]
     }
