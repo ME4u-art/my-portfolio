@@ -14,20 +14,15 @@ export default function Skills() {
     {
       id: 2,
       category: "Backend",
-      items: ["javaScript", "Node.js", "Express", "Python", "REST APIs", "MongoDB", "PostgreSQL"]
+      items: ["JavaScript", "Node.js", "Express", "Python", "REST APIs", "MongoDB", "PostgreSQL"]
     },
     {
       id: 3,
-      category: "Mobile Development",
-      items: ["Flutter", "Dart", "React Native", "iOS", "Android"]
-    },
-    {
-      id: 4,
       category: "Tools & DevOps",
       items: ["Git", "Docker", "GitHub", "Vite", "Linux", ]
     },
     {
-      id: 5,
+      id: 4,
       category: "Soft Skills",
       items: ["Problem Solving", "Communication", "Team Collaboration", "Project Management",]
     }

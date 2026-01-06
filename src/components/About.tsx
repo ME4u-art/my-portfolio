@@ -10,7 +10,7 @@ export default function About() {
         <div className="about-content">
           <h2>About Me</h2>
           <p>
-            I am a junior full-stack developer with hands-on experience building web applications and mobile applications. I enjoy solving real-world problems, writing clean and efficient code, and continuously learning new technologies to improve my skills and deliver high-quality solutions.
+            I am a junior full-stack developer with hands-on experience building web applications. I enjoy solving real-world problems, writing clean and efficient code, and continuously learning new technologies to improve my skills and deliver high-quality solutions.
           </p>
           <p>
             When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects,
